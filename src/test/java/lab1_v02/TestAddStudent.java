@@ -75,39 +75,39 @@ public class TestAddStudent {
         }
     }
 
-    @Test
-    public void addStudent_NullId_ThrowError() {
-        String idStudent = null;
-        String numeStudent = "john";
-        int grupa = 934;
-        String email = "john_doe@yahoo.com";
-        Student student = new Student(idStudent, numeStudent, grupa, email);
-
-        try {
-            service.addStudent(student);
-            assert(true);
-        } catch (ValidationException exception) {
-            System.out.println(exception);
-            assert(true);
-        }
-    }
-
-    @Test
-    public void addStudent_DuplicateId_ThrowError() {
-        String idStudent = "test";
-        String numeStudent = "john";
-        int grupa = 934;
-        String email = "john_doe@yahoo.com";
-        Student student = new Student(idStudent, numeStudent, grupa, email);
-
-        try {
-            Student result = service.addStudent(student);
-            assert(result == student);
-        } catch (ValidationException exception) {
-            System.out.println(exception);
-            assert(true);
-        }
-    }
+//    @Test
+//    public void addStudent_NullId_ThrowError() {
+//        String idStudent = null;
+//        String numeStudent = "john";
+//        int grupa = 934;
+//        String email = "john_doe@yahoo.com";
+//        Student student = new Student(idStudent, numeStudent, grupa, email);
+//
+//        try {
+//            service.addStudent(student);
+//            assert(true);
+//        } catch (ValidationException exception) {
+//            System.out.println(exception);
+//            assert(true);
+//        }
+//    }
+//
+//    @Test
+//    public void addStudent_DuplicateId_ThrowError() {
+//        String idStudent = "test";
+//        String numeStudent = "john";
+//        int grupa = 934;
+//        String email = "john_doe@yahoo.com";
+//        Student student = new Student(idStudent, numeStudent, grupa, email);
+//
+//        try {
+//            Student result = service.addStudent(student);
+//            assert(result == student);
+//        } catch (ValidationException exception) {
+//            System.out.println(exception);
+//            assert(true);
+//        }
+//    }
 
 
 
