@@ -51,11 +51,11 @@
   </component>
   <component name="RunManager" selected="JUnit.TestAddStudent">
     <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="app.MainApplication" />
+      <option name="MAIN_CLASS_NAME" value="main.java.app.MainApplication" />
       <module name="lab1_v02" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="app.*" />
+          <option name="PATTERN" value="main.java.app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -67,12 +67,12 @@
       <module name="lab1_v02" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="test.java.lab1_v02.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TestAddStudent" />
+      <option name="MAIN_CLASS_NAME" value="test.java.lab1_v02.tests.TestAddStudent" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,7 +97,9 @@
       <workItem from="1709567072077" duration="150000" />
       <workItem from="1709567233951" duration="1096000" />
       <workItem from="1710411197266" duration="33000" />
-      <workItem from="1710771492498" duration="2000000" />
+      <workItem from="1710771492498" duration="3947000" />
+      <workItem from="1711046260271" duration="1223000" />
+      <workItem from="1711889943516" duration="673000" />
     </task>
     <servers />
   </component>
