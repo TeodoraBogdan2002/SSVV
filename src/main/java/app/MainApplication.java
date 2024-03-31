@@ -1,14 +1,10 @@
-package main.java.app;
+package app;
 
 
-import main.java.repository.StudentXMLRepo;
-import main.java.repository.TemaXMLRepo;
-import main.java.repository.NotaXMLRepo;
-import main.java.service.Service;
-import main.java.validation.NotaValidator;
-import main.java.validation.StudentValidator;
-import main.java.validation.TemaValidator;
-import main.java.view.UI;
+import repository.*;
+import service.Service;
+import validation.*;
+import view.UI;
 
 
 

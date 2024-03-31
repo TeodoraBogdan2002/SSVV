@@ -1,6 +1,6 @@
-package main.java.repository;
+package repository;
 
-import main.java.domain.Nota;
+import domain.Nota;
 import java.time.LocalDate;
 
 import org.w3c.dom.Document;

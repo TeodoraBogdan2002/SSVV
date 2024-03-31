@@ -1,6 +1,6 @@
-package main.java.repository;
+package repository;
 
-import main.java.domain.Nota;
+import domain.Nota;
 import java.time.LocalDate;
 
 public class NotaFileRepository extends AbstractFileRepository<String, Nota> {

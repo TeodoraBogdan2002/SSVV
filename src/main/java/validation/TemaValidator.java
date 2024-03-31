@@ -1,6 +1,6 @@
-package main.java.validation;
+package validation;
 
-import main.java.domain.Tema;
+import domain.Tema;
 
 public class TemaValidator implements Validator<Tema> {
 

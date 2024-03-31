@@ -1,10 +1,10 @@
-package main.java.validation;
+package validation;
 
 
-import main.java.domain.Nota;
-import main.java.domain.Student;
-import main.java.domain.Tema;
-import main.java.repository.*;
+import domain.Nota;
+import domain.Student;
+import domain.Tema;
+import repository.*;
 
 public class NotaValidator implements Validator<Nota> {
     private StudentXMLRepo studentFileRepository;

@@ -1,6 +1,6 @@
-package main.java.repository;
+package repository;
 
-import main.java.domain.Tema;
+import domain.Tema;
 
 public class TemaFileRepository extends AbstractFileRepository<String, Tema> {
 

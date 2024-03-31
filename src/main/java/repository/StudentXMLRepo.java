@@ -1,6 +1,6 @@
-package main.java.repository;
+package repository;
 
-import main.java.domain.Student;
+import domain.Student;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;

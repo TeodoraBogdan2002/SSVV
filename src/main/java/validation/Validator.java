@@ -1,4 +1,4 @@
-package main.java.validation;
+package validation;
 
 public interface Validator<E> {
     /**

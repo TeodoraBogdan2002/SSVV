@@ -1,4 +1,4 @@
-package main.java.repository;
+package repository;
 
 /**
  * CRUD operations file main.java.repository interface

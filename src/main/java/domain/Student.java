@@ -1,6 +1,6 @@
-package main.java.domain;
+package domain;
 
-import main.java.repository.HasID;
+import repository.HasID;
 
 public class Student implements HasID<String> {
     private String idStudent;

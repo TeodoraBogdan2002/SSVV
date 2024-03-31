@@ -1,4 +1,4 @@
-package main.java.repository;
+package repository;
 
 public interface HasID<ID> {
 

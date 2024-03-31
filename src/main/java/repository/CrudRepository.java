@@ -1,5 +1,5 @@
-package main.java.repository;
-import main.java.validation.ValidationException;
+package repository;
+import validation.ValidationException;
 
 /**
  * CRUD operations main.java.repository interface

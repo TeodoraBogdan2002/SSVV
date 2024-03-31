@@ -1,10 +1,8 @@
-package main.java.view;
+package view;
 
-import main.java.domain.Nota;
-import main.java.domain.Student;
-import main.java.domain.Tema;
-import main.java.service.Service;
-import main.java.validation.ValidationException;
+import domain.*;
+import service.Service;
+import validation.ValidationException;
 import java.time.LocalDate;
 import java.util.InputMismatchException;
 import java.util.Scanner;
