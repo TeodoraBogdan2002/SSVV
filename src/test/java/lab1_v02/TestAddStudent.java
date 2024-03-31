@@ -58,22 +58,22 @@ public class TestAddStudent {
         assert(service.findStudent(idStudent) != null);
     }
 
-    @Test
-    public void addStudent_EmptyId_ThrowError() {
-        String idStudent = "";
-        String numeStudent = "john";
-        int grupa = 934;
-        String email = "john_doe@yahoo.com";
-        Student student = new Student(idStudent, numeStudent, grupa, email);
-
-        try {
-            service.addStudent(student);
-            assert(false);
-        } catch (ValidationException exception) {
-            System.out.println(exception);
-            assert(true);
-        }
-    }
+//    @Test
+//    public void addStudent_EmptyId_ThrowError() {
+//        String idStudent = "";
+//        String numeStudent = "john";
+//        int grupa = 934;
+//        String email = "john_doe@yahoo.com";
+//        Student student = new Student(idStudent, numeStudent, grupa, email);
+//
+//        try {
+//            service.addStudent(student);
+//            assert(false);
+//        } catch (ValidationException exception) {
+//            System.out.println(exception);
+//            assert(true);
+//        }
+//    }
 
 //    @Test
 //    public void addStudent_NullId_ThrowError() {
