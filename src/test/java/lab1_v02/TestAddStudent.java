@@ -75,6 +75,25 @@ public class TestAddStudent {
         }
     }
 
+    @Test
+    public void testAddStudentDuplicate(){
+        Student newStudent1 = new Student("1", "Ana", 931, "ana@gmail.com");
+
+        Student stud1 = this.service.addStudent(newStudent1);
+
+        Student stud2 = this.service.addStudent(newStudent1);
+        assertEquals(newStudent1.getID(), stud2.getID());
+
+        service.deleteStudent("1");
+    }
+
+    @Test
+    public void testAddStudentEmptyName(){
+        Student newStudent2 = new Student("2", "", 931, "ana@gmail.com");
+        assertThrows(ValidationException.class, () -> this.service.addStudent(newStudent2));
+
+    }
+
 //    @Test
 //    public void addStudent_NullId_ThrowError() {
 //        String idStudent = null;

@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="91528ab8-2e5e-4abf-ae59-e511d0709108" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fisiere/Studenti.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fisiere/Studenti.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/lab1_v02/TestAddStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab1_v02/TestAddStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/lab1_v02/TestAddStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lab1_v02/TestAddStudent.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,19 +58,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.TestAddStudent (2)">
-    <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.app.MainApplication" />
-      <module name="lab1_v02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.java.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestAddStudent (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1_v02" />
       <extension name="coverage">
@@ -130,13 +119,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestAddStudent.testAddStudentNonDuplicate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1_v02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab1_v02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lab1_v02" />
+      <option name="MAIN_CLASS_NAME" value="lab1_v02.TestAddStudent" />
+      <option name="METHOD_NAME" value="testAddStudentNonDuplicate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestAddStudent (2)" />
+        <item itemvalue="JUnit.TestAddStudent.testAddStudentNonDuplicate" />
         <item itemvalue="JUnit.TestAddStudent.testAddStudentDuplicate" />
         <item itemvalue="JUnit.TestAddStudent (1)" />
         <item itemvalue="JUnit.TestAddStudent" />
-        <item itemvalue="Application.MainApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +160,7 @@
       <workItem from="1710771492498" duration="3947000" />
       <workItem from="1711046260271" duration="1223000" />
       <workItem from="1711889943516" duration="1696000" />
-      <workItem from="1711892124049" duration="5590000" />
+      <workItem from="1711892124049" duration="6261000" />
     </task>
     <servers />
   </component>
