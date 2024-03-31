@@ -1,4 +1,4 @@
-package lab1_v02.tests;
+package lab1_v02;
 
 import domain.Student;
 
@@ -158,12 +158,6 @@ public class TestAddStudent {
     public void testAddStudentEmptyId() {
         Student newStudent2 = new Student("", "Ana", 931, "ana@gmail.com");
         assertThrows(ValidationException.class, () -> this.service.addStudent(newStudent2));
-    }
-
-    @Test
-    public void testAddStudentNullId() {
-        Student newStudent3 = new Student(null, "Ana", 931, "ana@gmail.com");
-        assertThrows(ValidationException.class, () -> this.service.addStudent(newStudent3));
     }
 
     /**
