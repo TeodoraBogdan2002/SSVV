@@ -2,6 +2,7 @@ package lab1_v02;
 
 import domain.Student;
 
+import domain.Tema;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -22,7 +23,9 @@ import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+//@RunWith(JUnit4.class)
 public class TestAddStudent {
+
     public static Service service;
 
     @BeforeAll
@@ -40,12 +43,172 @@ public class TestAddStudent {
         TestAddStudent.service = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
     }
 
+    // White box testing
+    @Test
+    public void addTema_ValidData_CreateSuccessfully() {
+        String nrTema = "100";
+        String descriere = "test";
+        int deadline = 12;
+        int primire = 1;
+        Tema tema = new Tema(nrTema, descriere, deadline, primire);
+        try {
+            service.addTema(tema);
+            assert(true);
+        } catch (ValidationException exception) {
+            System.out.println("Validation exception: " + exception.getMessage());
+            assert(false);
+        }
+    }
+
+    @Test
+    public void addTema_Invalid_nrTema_duplicate_ThrowsError() {
+        String nrTema = "100";
+        String descriere = "test";
+        int deadline = 12;
+        int primire = 1;
+        Tema tema = new Tema(nrTema, descriere, deadline, primire);
+        try {
+            Tema response = service.addTema(tema);
+            assert(tema == response);
+        } catch (ValidationException exception) {
+            System.out.println("Validation exception: " + exception.getMessage());
+            assert(true);
+        }
+    }
+
+    @Test
+    public void addTema_Invalid_nrTema_emptyString_ThrowsError() {
+        String nrTema = "";
+        String descriere = "test";
+        int deadline = 12;
+        int primire = 2;
+        Tema tema = new Tema(nrTema, descriere, deadline, primire);
+        try {
+            service.addTema(tema);
+            assert(false);
+        } catch (ValidationException exception) {
+            System.out.println("Validation exception: " + exception.getMessage());
+            assert(true);
+        }
+    }
+
+    @Test
+    public void addTema_Invalid_descriere_emptyString_ThrowsError() {
+
+        String nrTema = "101";
+        String descriere = "";
+        int deadline = 12;
+        int primire = 2;
+
+        Tema tema = new Tema(nrTema, descriere, deadline, primire );
+
+        try{
+            service.addTema(tema);
+            assert(false);
+
+        }catch (ValidationException ve){
+            System.out.println("Validation Exception: " + ve.getMessage());
+            assert(true);
+
+        }
+
+    }
+
+    @Test
+    public void addTema_Invalid_deadline_smallerThan1_ThrowsError() {
+
+        String nrTema = "102";
+        String descriere = "test";
+        int deadline = 0;
+        int primire = 11;
+
+        Tema tema = new Tema(nrTema, descriere, deadline, primire );
+
+        try{
+            service.addTema(tema);
+            assert(false);
+
+        }catch (ValidationException ve){
+            System.out.println("Validation Exception: " + ve.getMessage());
+            assert(true);
+
+        }
+
+    }
+
+    @Test
+    public void addTema_Invalid_deadline_greaterThan14_ThrowsError() {
+
+        String nrTema = "102";
+        String descriere = "test";
+        int deadline = 15;
+        int primire = 11;
+
+        Tema tema = new Tema(nrTema, descriere, deadline, primire );
+
+        try{
+            service.addTema(tema);
+            assert(false);
+
+        }catch (ValidationException ve){
+            System.out.println("Validation Exception: " + ve.getMessage());
+            assert(true);
+
+        }
+
+    }
+
+    @Test
+    public void addTema_Invalid_primire_smallerThan1_ThrowsError() {
+
+        String nrTema = "103";
+        String descriere = "test";
+        int deadline = 12;
+        int primire = 0;
+
+        Tema tema = new Tema(nrTema, descriere, deadline, primire );
+
+        try{
+            service.addTema(tema);
+            assert(false);
+
+        }catch (ValidationException ve){
+            System.out.println("Validation Exception: " + ve.getMessage());
+            assert(true);
+
+        }
+
+    }
+
+    @Test
+    public void addTema_Invalid_primire_greaterThan14_ThrowsError() {
+
+        String nrTema = "103";
+        String descriere = "test";
+        int deadline = 12;
+        int primire = 15;
+
+        Tema tema = new Tema(nrTema, descriere, deadline, primire );
+
+        try{
+            service.addTema(tema);
+            assert(false);
+
+        }catch (ValidationException ve){
+            System.out.println("Validation Exception: " + ve.getMessage());
+            assert(true);
+
+        }
+
+    }
+
+    // Black box testing
     @Test
     public void addStudent_ValidData_CreatedSuccessfully() {
         String idStudent = "test";
-        String numeStudent = "john";
-        int grupa = 934;
-        String email = "john_doe@yahoo.com";
+        String numeStudent = "miguel";
+        int grupa = 931;
+        String email = "miguel@yahoo.com";
         Student student = new Student(idStudent, numeStudent, grupa, email);
 
         try {
@@ -61,9 +224,9 @@ public class TestAddStudent {
     @Test
     public void addStudent_EmptyId_ThrowError() {
         String idStudent = "";
-        String numeStudent = "john";
-        int grupa = 934;
-        String email = "john_doe@yahoo.com";
+        String numeStudent = "miguel";
+        int grupa = 931;
+        String email = "miguel@yahoo.com";
         Student student = new Student(idStudent, numeStudent, grupa, email);
 
         try {
@@ -75,59 +238,40 @@ public class TestAddStudent {
         }
     }
 
+
+
     @Test
-    public void testAddStudentDuplicate(){
-        Student newStudent1 = new Student("1", "Ana", 931, "ana@gmail.com");
-
-        Student stud1 = this.service.addStudent(newStudent1);
-
-        Student stud2 = this.service.addStudent(newStudent1);
-        assertEquals(newStudent1.getID(), stud2.getID());
-
-        service.deleteStudent("1");
+    public void addStudent_DuplicateId_ThrowError() {
+        String idStudent = "test";
+        String numeStudent = "miguel";
+        int grupa = 931;
+        String email = "miguel@yahoo.com";
+        Student student = new Student(idStudent, numeStudent, grupa, email);
+        try {
+            Student result = service.addStudent(student);
+            assert(result == student);
+        } catch (ValidationException exception) {
+            System.out.println(exception);
+            assert(true);
+        }
     }
 
     @Test
-    public void testAddStudentEmptyName(){
-        Student newStudent2 = new Student("2", "", 931, "ana@gmail.com");
-        assertThrows(ValidationException.class, () -> this.service.addStudent(newStudent2));
+    public void addStudent_EmptyName_ThrowError() {
+        String idStudent = "test1";
+        String numeStudent = "";
+        int grupa = 931;
+        String email = "miguel@yahoo.com";
+        Student student = new Student(idStudent, numeStudent, grupa, email);
 
+        try {
+            service.addStudent(student);
+            assert(false);
+        } catch (ValidationException exception) {
+            System.out.println(exception);
+            assert(true);
+        }
     }
-
-//    @Test
-//    public void addStudent_NullId_ThrowError() {
-//        String idStudent = null;
-//        String numeStudent = "john";
-//        int grupa = 934;
-//        String email = "john_doe@yahoo.com";
-//        Student student = new Student(idStudent, numeStudent, grupa, email);
-//
-//        try {
-//            service.addStudent(student);
-//            assert(true);
-//        } catch (ValidationException exception) {
-//            System.out.println(exception);
-//            assert(true);
-//        }
-//    }
-//
-//    @Test
-//    public void addStudent_DuplicateId_ThrowError() {
-//        String idStudent = "test";
-//        String numeStudent = "john";
-//        int grupa = 934;
-//        String email = "john_doe@yahoo.com";
-//        Student student = new Student(idStudent, numeStudent, grupa, email);
-//
-//        try {
-//            Student result = service.addStudent(student);
-//            assert(result == student);
-//        } catch (ValidationException exception) {
-//            System.out.println(exception);
-//            assert(true);
-//        }
-//    }
-
 
 
 }
