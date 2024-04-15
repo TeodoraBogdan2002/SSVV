@@ -4,7 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91528ab8-2e5e-4abf-ae59-e511d0709108" name="Changes" comment="" />
+    <list default="true" id="91528ab8-2e5e-4abf-ae59-e511d0709108" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/lab1_v02/Lab4Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1_v02.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lab1_v02.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/MainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/MainApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/curent/Curent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/curent/Curent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/Nota.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Nota.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/Tema.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Tema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/AbstractCrudRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/AbstractCrudRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/AbstractFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/AbstractFileRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/AbstractXMLRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/AbstractXMLRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/CrudRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/CrudRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/FileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/FileRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/HasID.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/HasID.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/NotaFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/NotaFileRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/NotaXMLRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/NotaXMLRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/StudentFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/StudentFileRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/StudentXMLRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/StudentXMLRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/TemaFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/TemaFileRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/TemaXMLRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/TemaXMLRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/validation/NotaValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validation/NotaValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/validation/StudentValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validation/StudentValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/validation/TemaValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validation/TemaValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/validation/ValidationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validation/ValidationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/validation/Validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validation/Validator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/UI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/lab1_v02/TestAddStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/lab1_v02/TestAddStudent.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +82,22 @@
       <recent name="C:\Users\teove\Documents\Faculty\3rd_Year\2nd_Semester\SSVV\lab1_v02" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestAddStudent (2)">
+  <component name="RunManager" selected="JUnit.Lab4Tests">
+    <configuration name="Lab4Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1_v02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab1_v02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lab1_v02" />
+      <option name="MAIN_CLASS_NAME" value="lab1_v02.Lab4Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestAddStudent (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1_v02" />
       <extension name="coverage">
@@ -68,7 +113,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAddStudent (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAddStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1_v02" />
       <extension name="coverage">
         <pattern>
@@ -78,21 +123,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="lab1_v02" />
       <option name="MAIN_CLASS_NAME" value="lab1_v02.TestAddStudent" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestAddStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab1_v02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.java.lab1_v02.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="test.java.lab1_v02.tests.TestAddStudent" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Lab4Tests" />
         <item itemvalue="JUnit.TestAddStudent (2)" />
         <item itemvalue="JUnit.TestAddStudent.testAddStudentNonDuplicate" />
         <item itemvalue="JUnit.TestAddStudent.testAddStudentDuplicate" />
         <item itemvalue="JUnit.TestAddStudent (1)" />
-        <item itemvalue="JUnit.TestAddStudent" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +185,10 @@
       <workItem from="1710771492498" duration="3947000" />
       <workItem from="1711046260271" duration="1223000" />
       <workItem from="1711889943516" duration="1696000" />
-      <workItem from="1711892124049" duration="10225000" />
+      <workItem from="1711892124049" duration="11095000" />
+      <workItem from="1712226916654" duration="1234000" />
+      <workItem from="1712655337594" duration="1044000" />
+      <workItem from="1713182660204" duration="3118000" />
     </task>
     <servers />
   </component>
